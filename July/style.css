@@ -1,0 +1,536 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.about {
+	width: 946px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.about .photo {
+	margin-bottom: 23px;
+	width: 170px;
+	height: 170px;
+	border-radius: 100px;
+	border: 1px solid #ccc;
+}
+
+.about .text1 {
+	color: #303030;
+	font-family: PlayfairDisplay;
+	font-size: 30px;
+	font-style: italic;
+	line-height: 24px;
+	margin-top: 32px;
+	margin-bottom: 20px;
+}
+
+.decoration {
+	width: 8px;
+	height: 8px;
+	background-color: #e8e8e8;
+	position: relative;
+	border-radius: 100%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.decoration:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	margin-top: -1px;
+	height: 1px;
+	width: 23px;
+	background-color: #e8e8e8;
+	left: 200%;
+}
+
+.decoration:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	margin-top: -1px;
+	height: 1px;
+	width: 23px;
+	background-color: #e8e8e8;
+	left: -400%;
+}
+
+.about .text2 {
+	color: #515151;
+	font-family: Raleway;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 24px;
+	margin-top: 20px;
+}
+
+.about .miketaylor {
+	margin: 0 auto;
+	margin-top: 36px;
+	width: auto;
+	height: auto;
+	color: #303030;
+	font-family: Herr Von Muellerhoff;
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.about .text3 {
+	color: #303030;
+	font-family: PlayfairDisplay;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 24px;
+	margin-top: 25px;
+	position: relative;
+	left: 10px;
+}
+
+.social {
+	width: 400px;
+	height: 45px;
+	display: table;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.social:after {
+	content: '';
+	width: 100%; 
+	height: 1px; 
+	clear: both;
+}
+
+.social a {
+	display: block;
+    text-align: center;
+    height: 100%;
+}
+
+.social .facebook {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 42px;
+	height: 42px;
+	margin: 10px;
+	opacity: 0.3;
+	border: 1px solid #868686;
+	float: left;
+	line-height: 42px;
+	background: url(facebook1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.social .facebook:hover {
+	opacity: 1;
+	background-image: url(facebook2.png);
+	background-color: #e1571a;
+	border-color: #e1571a;
+}
+
+.social .twitter {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 42px;
+	height: 42px;
+	margin: 10px;
+	opacity: 0.3;
+	border: 1px solid #868686;
+	float: left;
+	line-height: 42px;
+	background: url(twitter1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.social .twitter:hover {
+	opacity: 1;
+	background-image: url(twitter2.png);
+	background-color: #e1571a;
+	border-color: #e1571a;
+}
+
+.social .google {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 42px;
+	height: 42px;
+	margin: 10px;
+	opacity: 0.3;
+	border: 1px solid #868686;
+	float: left;
+	line-height: 42px;
+	background: url(google1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.social .google:hover {
+	opacity: 1;
+	background-image: url(google2.png);
+	background-color: #e1571a;
+	border-color: #e1571a;
+}
+
+.social .dribble {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 42px;
+	height: 42px;
+	margin: 10px;
+	opacity: 0.3;
+	border: 1px solid #868686;
+	float: left;
+	line-height: 42px;
+	background: url(dribble1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.social .dribble:hover {
+	opacity: 1;
+	background-image: url(dribble2.png);
+	background-color: #e1571a;
+	border-color: #e1571a;
+}
+
+.social .pinterest {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 42px;
+	height: 42px;
+	margin: 10px;
+	opacity: 0.3;
+	border: 1px solid #868686;
+	float: left;
+	line-height: 42px;
+	background: url(pinterest1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.social .pinterest:hover {
+	opacity: 1;
+	background-image: url(pinterest2.png);
+	background-color: #e1571a;
+	border-color: #e1571a;
+}
+
+.social .github {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 42px;
+	height: 42px;
+	margin: 10px;
+	opacity: 0.3;
+	border: 1px solid #868686;
+	float: left;
+	line-height: 42px;
+	background: url(github1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.social .github:hover {
+	opacity: 1;
+	background-image: url(github2.png);
+	background-color: #e1571a;
+	border-color: #e1571a;
+}
+
+.paralax {
+	width: 1920px;
+	height: 585px;
+	margin: 0 auto;
+	margin-top: 80px;
+    background-image: url(paralax.png);
+ }
+
+ .paralax p {
+	color: white;
+	font-family: Playfair Display;
+	font-size: 36px;
+	font-style: italic;
+	display: inline-block;
+	text-align: center;
+	margin-top: 207px;
+	margin-left: 523px;
+ }
+
+ .paralax .button {
+ 	border-radius: 100%;
+	overflow: hidden;
+	width: 66px;
+	height: 66px;
+	margin: 0 auto;
+	margin-top: 68px;
+	border: 1px solid white;
+	line-height: 66px;
+	background: url(play.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.client {
+	width: 745px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.client .text4 {
+	color: #303030;
+	font-family: PlayfairDisplay;
+	font-size: 30px;
+	font-style: italic;
+	margin-top: 50px;
+}
+
+.client .clientphoto {
+	margin-top: 96px;
+	width: 90px;
+	height: 90px;
+	border-radius: 100px;
+}
+
+.client .text5 {
+	width: 745px;
+	height: 40px;
+	color: #515151;
+	font-family: PlayfairDisplay;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 24px;
+	margin: 0 auto;
+	margin-top: 34px;
+	text-align: center;
+}
+
+.client .line {
+	width: 30px;
+	height: 2px;
+	background-color: #e8e8e8;
+	margin: 0 auto;
+	margin-top: 24px;
+}
+
+.client .clientname {
+	width: 110px;
+	height: 14px;
+	color: #e1571a;
+	font-family: Raleway;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 24px;
+	margin: 0 auto;
+	margin-top: 21px;
+}
+
+.client .clientjob {
+	width: 180px;
+	height: 13px;
+	color: #303030;
+	font-family: Raleway;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 24px;
+	margin: 0 auto;
+	margin-top: 13px;
+}
+
+.client .clientbuttons {
+	width: 100px;
+	height: 48px;
+	display: table;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+
+.client .clientbuttons:after {
+	content: '';
+	width:100%; 
+	height:1px; 
+	clear:both;
+}
+
+.client .clientbuttons .leftbutton {
+	overflow: hidden;
+	width: 23px;
+	height: 23px;
+	margin: 10px;
+	border: 1px solid #868686;
+	float: left;
+	line-height: 23px;
+	background-image: url(left.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%
+}
+
+.client .clientbuttons .leftbutton:hover {
+	border: 2px solid black;
+}
+
+.client .clientbuttons .rightbutton {
+	overflow: hidden;
+	width: 23px;
+	height: 23px;
+	margin: 10px;
+	border: 1px solid #868686;
+	float: left;
+	line-height: 23px;
+	background-image: url(right.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%
+}
+
+.client .clientbuttons .rightbutton:hover {
+	border: 2px solid black;
+}
+
+.instagram p {
+	color: #303030;
+	font-family: Playfair Display;
+	font-size: 30px;
+	font-style: italic;
+	line-height: 24px;
+	text-align: center;
+	margin-top: 82px;
+}
+
+.instagram .section {
+	margin: -3px auto;
+	margin-top: 60px;
+	float: left;
+	overflow: hidden;
+}
+
+.instagram:after {
+	content: '';
+	overflow: hidden;
+	display: table;
+	clear: both;
+}
+
+.instagram .section .instaphoto {
+	width: 20%;
+	height: 20%;
+	margin: 0;
+	list-style-type: none;
+	float: left;
+}
+
+img {
+	width: 100%
+}
+
+footer {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	background-color: #141414;
+}
+
+footer .mikesfooter {
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 104px;
+	height: 63px;
+	color: white;
+	font-family: Herr Von Muellerhoff;
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+footer .photographyfooter {
+	margin: 0 auto;
+	width: 81px;
+	height: 18px;
+	display: block;
+	position: relative;
+	top: -42px;
+	left: 21px;
+	color: white;
+	font-family: Dancing Script;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+footer .text6 {
+	margin: 0 auto;
+	margin-top: 23px;
+	width: 749px;
+	height: 37px;
+	color: #515151;
+	font-family: Raleway;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 24px;
+	text-align: center;
+}
+
+footer .longline {
+	width: 770px;
+	height: 1px;
+	background-color: #262626;
+	margin: 0 auto;
+	margin-top: 72px;
+}
+
+footer .copywrite {
+	margin: 0 auto;
+	margin-top: 33px;
+	margin-bottom: 38px;
+	width: 128px;
+	height: 10px;
+	color: #4c4c4c;
+	font-family: Raleway;
+	font-size: 11px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
