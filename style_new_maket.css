@@ -1,0 +1,121 @@
+
+.flower {
+	width: 939px;
+	height: 450px;
+	margin: 0 232px;
+	
+}
+.layer2 {
+	/* Style for "Layer 2" */
+width: 336px;
+height: 450px;
+float: left;
+}
+.buket {
+	width: 100%;
+}
+.zagolovok_buket {
+	
+color: #303030;
+font-family: 'Playfair Display', serif;
+font-size: 30px;
+font-style: italic;
+line-height: 24px;
+}
+.text_buket {
+	width: 570px;
+	color: #515151;
+	font-family: Raleway;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 24px;
+	float: left;
+
+	padding:63px 0px 0px 32px;
+}
+.all_text_buket{
+	padding:15px 0px 0px 0px;
+}
+.all_text_buket_niz {
+	padding:0px 0px 12px 0px;
+}
+
+.button_flower {
+	/* Style for "bg" */
+width: 145px;
+height: 37px;
+background-color: #303030;
+
+margin-top: 0 auto;
+
+color: white;
+font-family: Raleway;
+font-size: 12px;
+font-weight: 500;
+line-height: 37px;
+text-transform: uppercase;
+
+text-align: center;
+}
+
+.text_buket p {
+	margin-bottom: 25px;
+}
+a.knopka {
+	  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: #303030; /* фон кнопки */
+  padding: 11px 37px; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+}
+a.knopka:hover { background: black; } /* при наведении курсора мышки */
+a.knopka:active { background: #e1571a; } /* при нажатии */
+
+.philosophy {
+	width: 1546px;	
+}
+.zagolovok_philosophy {
+	color: #303030;
+font-family: 'Playfair Display', serif;
+font-size: 30px;
+font-style: italic;
+line-height: 24px;
+margin:0 auto;
+
+padding: 86px 0 105px 478px;
+
+}
+.philosophy_block {
+ width: 569px;
+ float: left;
+
+ padding: 0 31px 0 0;
+ 
+
+	color: #515151;
+	font-family: Raleway;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 24px;
+	float: left;
+}
+.zagolovok_philosophy_02 {
+	color: #303030;
+font-family: 'Playfair Display', serif;
+font-size: 30px;
+font-style: italic;
+line-height: 24px
+
+margin-bottom: 37px;
+
+}
+.philosophy_block p {
+	margin-bottom: 25px;
+}
+.phil_1 {
+	padding-top: 11px;
+}
+.phil_3 {
+	padding-bottom: 34px;
+}
