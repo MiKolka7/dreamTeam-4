@@ -315,6 +315,10 @@ table {
 	background-position: 50% 50%;
 }
 
+ .paralax .button:hover {
+ 	border: 2px solid white;
+}
+
 .client {
 	width: 745px;
 	margin: 0 auto;
