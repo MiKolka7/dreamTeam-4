@@ -284,8 +284,8 @@ table {
 }
 
 .paralax {
-	width: 1920px;
-	height: 585px;
+	width: auto;
+	min-height: 585px;
 	margin: 0 auto;
 	margin-top: 80px;
     background-image: url(paralax.png);
@@ -297,10 +297,9 @@ table {
 	font-size: 36px;
 	font-style: italic;
 	display: inline-block;
-	text-align: center;
 	margin-top: 207px;
-	margin-left: 523px;
- }
+	margin-left: 300px;
+}
 
  .paralax .button {
  	border-radius: 100%;
