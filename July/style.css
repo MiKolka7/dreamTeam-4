@@ -1,0 +1,884 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	min-width: 990px;
+	font-size: 12px;
+}
+
+/* Slider */
+
+.slider-bg {
+	width: 100%;
+    position: relative;
+    margin-bottom: 89px;
+}
+
+.slider-bg img {
+    width: 100%;
+}
+
+.check {
+	display: none;
+}
+
+nav {
+	opacity: 0;
+	visibility: hidden;
+
+	transform: translate(2.6%, 0);
+	transition: all 0.5s ease;
+}
+
+.check:checked + nav {
+	opacity: 1;
+	visibility: visible;
+
+	transform: translate(0, 0);
+}
+
+.slider-bg .logo {
+	position: absolute;
+	top: 8.1%;
+	left: 8.1%;
+}
+
+.slider-bg .logo .mikes {
+	margin: 0;
+
+	color: white;
+	font-family: Herr Von Muellerhoff;
+	font-size: 5em;
+	font-weight: 400;
+}
+
+.slider-bg .logo .photography {
+	margin: -16% 0 0 34%;
+
+	color: #717171;
+	font-family: Myriad Pro;
+	font-size: 1.167em;
+	font-weight: 400;
+}
+
+.top-menu {
+	width: auto;
+
+    position: absolute;
+    top: 10.8%;
+    right: 13%;
+}
+
+.top-menu a {
+	margin: 0 16px;
+
+    color: white;
+    font-family: Raleway;
+    font-size: 1.083em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.top-menu a:hover {
+	background-image: url(redline.png);
+}
+
+.burger {
+	position: absolute;
+
+	top: 10.5%;
+    right: 10%;
+}
+
+.burger:hover {
+	cursor: pointer;
+}
+
+.search {
+	position: absolute;
+    top: 10.5%;
+    right: 7%;
+}
+
+.nav-slider {
+	position: absolute;
+	bottom: 3%;
+	left: 47%;
+}
+
+/* About */
+
+.about {
+	width: 60%;
+	margin: 0 auto;
+
+	text-align: center;
+}
+
+.about .photo {
+	margin-bottom: 57px;
+
+	border-radius: 100px;
+	border: 1px solid #ccc;
+}
+
+.text1 {
+	margin-bottom: 16px;
+
+	color: #303030;
+	font-family: Playfair Display;
+	font-size: 2.5em;
+	font-style: italic;
+}
+
+.decoration {
+	width: 8px;
+	height: 8px;
+
+	margin: 0 auto 32px;
+
+	background-color: #e8e8e8;
+	border-radius: 100%;
+
+	position: relative;
+	
+}
+
+.decoration:after {
+	content: '';
+
+	height: 1px;
+	width: 23px;
+
+	position: absolute;
+	top: 50%;
+	left: 200%;
+
+	margin-top: -1px;
+
+	background-color: #e8e8e8;
+}
+
+.decoration:before {
+	content: '';
+
+	height: 1px;
+	width: 23px;
+
+	position: absolute;
+	top: 50%;
+	left: -400%;
+
+	margin-top: -1px;
+	
+	background-color: #e8e8e8;
+}
+
+.text2 {
+	margin-bottom: 36px;
+
+	color: #515151;
+	font-family: Raleway;
+	font-size: 1em;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+.about .miketaylor {
+	width: auto;
+	height: auto;
+
+	margin: 0 auto 8px;
+	
+	color: #303030;
+	font-family: Herr Von Muellerhoff;
+	font-size: 5em;
+	font-weight: 400;
+}
+
+.about .text3 {
+	margin-bottom: 30px;
+
+	position: relative;
+	left: 2.5%;
+
+	color: #303030;
+	font-family: PlayfairDisplay;
+	font-size: 1.167em;
+	font-style: italic;
+}
+
+.social {
+	margin: 0 auto 71px;
+	display: table;	
+}
+
+.social:after {
+	content: '';
+	width: 100%; 
+	height: 1px; 
+	clear: both;
+}
+
+.social a {
+	display: block;
+    text-align: center;
+    height: 100%;
+}
+
+.social .facebook {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 42px;
+	height: 42px;
+	margin: 10px;
+	opacity: 0.3;
+	border: 1px solid #868686;
+	float: left;
+	line-height: 42px;
+	background: url(facebook1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.social .facebook:hover {
+	opacity: 1;
+	background-image: url(facebook2.png);
+	background-color: #e1571a;
+	border-color: #e1571a;
+}
+
+.social .twitter {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 42px;
+	height: 42px;
+	margin: 10px;
+	opacity: 0.3;
+	border: 1px solid #868686;
+	float: left;
+	line-height: 42px;
+	background: url(twitter1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.social .twitter:hover {
+	opacity: 1;
+	background-image: url(twitter2.png);
+	background-color: #e1571a;
+	border-color: #e1571a;
+}
+
+.social .google {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 42px;
+	height: 42px;
+	margin: 10px;
+	opacity: 0.3;
+	border: 1px solid #868686;
+	float: left;
+	line-height: 42px;
+	background: url(google1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.social .google:hover {
+	opacity: 1;
+	background-image: url(google2.png);
+	background-color: #e1571a;
+	border-color: #e1571a;
+}
+
+.social .dribble {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 42px;
+	height: 42px;
+	margin: 10px;
+	opacity: 0.3;
+	border: 1px solid #868686;
+	float: left;
+	line-height: 42px;
+	background: url(dribble1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.social .dribble:hover {
+	opacity: 1;
+	background-image: url(dribble2.png);
+	background-color: #e1571a;
+	border-color: #e1571a;
+}
+
+.social .pinterest {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 42px;
+	height: 42px;
+	margin: 10px;
+	opacity: 0.3;
+	border: 1px solid #868686;
+	float: left;
+	line-height: 42px;
+	background: url(pinterest1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.social .pinterest:hover {
+	opacity: 1;
+	background-image: url(pinterest2.png);
+	background-color: #e1571a;
+	border-color: #e1571a;
+}
+
+.social .github {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 42px;
+	height: 42px;
+	margin: 10px;
+	opacity: 0.3;
+	border: 1px solid #868686;
+	float: left;
+	line-height: 42px;
+	background: url(github1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.social .github:hover {
+	opacity: 1;
+	background-image: url(github2.png);
+	background-color: #e1571a;
+	border-color: #e1571a;
+}
+
+/* Gallery */
+
+.gallery {
+	width: 1170px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.gallery ul li {
+	min-width: 264px;
+	min-height: 271px;
+	overflow: hidden;
+
+	float: left;
+	margin: 0 14px 19px;
+
+	display: inline-block;
+	position: relative;
+}
+
+.gallery li img {
+	position: absolute;
+}
+
+.gallery .description {
+	display: block;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    opacity: 0;
+  }
+
+.gallery .description:hover {
+	background-image: url(black.png);
+	opacity: 1;
+}
+
+.gallery .description .lifestyle {
+	margin-top: 43%;
+
+	color: white;
+	font-family: Playfair Display;
+	font-size: 1.6em;
+	font-style: italic;
+	text-align: center;
+}
+
+.gallery .description .location {
+	margin-top: 5%;
+
+	color: white;
+	font-family: Raleway;
+	font-size: 0.67em;
+	font-weight: 600;
+	text-align: center;
+}
+
+.button {
+	width: 145px;
+	height: 37px;
+
+	margin: 0 auto;
+	margin-top: 78px;
+	margin-bottom: 161px;
+
+	background-color: #303030;	
+}
+
+.button:hover {
+	background-color: #000;
+}
+
+.button p {
+	color: white;
+	font-family: Raleway;
+	font-size: 1em;
+	font-weight: 500;
+	line-height: 37px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.button a {
+	text-decoration: none;
+}
+
+.gallery:after {
+	content: '';
+	width: 100%; ; 
+	display: table;
+	clear: both;
+}
+
+/* Best Potographer */
+
+.best_photographer {
+	margin: 0 auto;
+	width: 1170px;
+}
+
+.best_photographer .left {
+	width: 50%;
+	height: 450px;
+	float: left;
+	padding: 0;
+	position: relative;
+}
+
+.best_photographer .left img {
+	width: auto;
+	position: absolute;
+	right: 33px;
+}
+
+.best_photographer .right {
+	width: 50%;
+	height: 450px;
+	float: right;
+}
+
+.best_photographer .right p {
+	margin-left: 0;
+	margin-top: 63px;
+}
+
+.best_photographer .right .button {
+	margin-left: 0;
+	margin-top: 27px;
+}
+
+.best_photographer:after {
+	content: '';
+	width: 100%; ; 
+	display: table;
+	clear: both;
+}
+
+.best_photographer .button p {
+	margin: 0 auto;
+}
+
+.best_photographer:after {
+	content: '';
+	width: 100%; ; 
+	display: table;
+	clear: both;
+}
+
+/* Philosophy */
+
+.philosophy {
+	margin: 162px auto 0;
+}
+
+.philosophy p.text1 {
+	text-align: center;
+}
+
+.philosophy .decoration {
+	margin-bottom: 80px;
+}
+
+.philosophy .left {
+	width: 50%;
+	height: auto;
+	float: left;
+}
+
+.philosophy .left_inner {
+	width: 70%;
+	margin-right: 42px;
+	float: right;
+}
+
+.philosophy .left p.text1 {
+	margin-top: 0;
+	text-align: left;
+}
+
+.philosophy .left p.text2 {
+	text-align: left;
+}
+
+.philosophy .left .button {
+	margin-top: 59px;
+	margin-left: 0;
+}
+
+.philosophy .right {
+	width: 50%;
+	float: right;
+	height: auto;
+}
+
+.philosophy .right img {
+	width: 100%;
+}
+
+.philosophy:after {
+	content: '';
+	width: 100%; ; 
+	display: table;
+	clear: both;
+}
+
+/* Video */
+
+.video {
+	width: 100%;
+	min-height: 585px;
+
+	margin: 80px auto 0;
+
+    background-image: url(video.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+ }
+
+ .video p.text4 {
+	color: white;
+	font-family: Playfair Display;
+	font-size: 3.17em;
+	font-style: italic;
+	text-align: center;
+	line-height: 400px;
+}
+
+
+ .video .play {
+ 	margin: 0 auto;
+
+ 	width: 66px;
+	height: 66px;
+
+ 	border-radius: 100%;
+	overflow: hidden;
+	border: 1px solid white;
+	line-height: 66px;
+
+	background: url(play.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	
+	position: absolute;
+	bottom: 226px;
+	left: 48%;
+}
+
+ .video .play:hover {
+ 	border: 2px solid white;
+}
+
+/* Client */
+
+.client {
+	width: 745px;
+	margin: 80px auto 0;
+	text-align: center;
+}
+
+.client .text4 {
+	margin-bottom: 17px;
+
+	color: #303030;
+	font-family: Playfair Display;
+	font-size: 2.5em;
+	font-style: italic;
+}
+
+.client .clientphoto {
+	margin-top: 96px;
+	width: 90px;
+	height: 90px;
+
+	border-radius: 100px;
+}
+
+.client .text5 {
+	margin: 34px auto 0;
+
+	width: 745px;
+	height: 40px;
+
+	color: #515151;
+	font-family: Playfair Display;
+	font-size: 1.17em;
+	font-style: italic;
+	line-height: 24px;
+	text-align: center;
+}
+
+.client .line {
+	margin: 24px auto 0;
+
+	width: 30px;
+	height: 2px;
+
+	background-color: #e8e8e8;
+}
+
+.client .clientname {
+	margin: 21px auto 0;
+	width: 110px;
+	height: 14px;
+
+	color: #e1571a;
+	font-family: Raleway;
+	font-size: 1.17em;
+	font-weight: 700;
+	line-height: 24px;
+
+}
+
+.client .clientjob {
+	width: 180px;
+	height: 13px;
+	margin: 13px auto 0;
+
+	color: #303030;
+	font-family: Raleway;
+	font-size: 1em;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+.client .clientbuttons {
+	width: 100px;
+	height: 48px;
+	margin: 25px auto 0;
+
+	display: table;
+}
+
+.client .clientbuttons:after {
+	content: '';
+	width:100%; 
+	height:1px; 
+	clear:both;
+}
+
+.client .clientbuttons .leftbutton {
+	overflow: hidden;
+	width: 23px;
+	height: 23px;
+	margin: 10px;
+	border: 1px solid #868686;
+	float: left;
+	line-height: 23px;
+	background-image: url(left.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%
+}
+
+.client .clientbuttons .leftbutton:hover {
+	border: 2px solid black;
+}
+
+.client .clientbuttons .rightbutton {
+	overflow: hidden;
+	width: 23px;
+	height: 23px;
+	margin: 10px;
+	border: 1px solid #868686;
+	float: left;
+	line-height: 23px;
+	background-image: url(right.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%
+}
+
+.client .clientbuttons .rightbutton:hover {
+	border: 2px solid black;
+}
+
+/* Instagram */
+
+.instagram .text1 {
+	text-align: center;
+	margin: 82px 0 17px;
+}
+
+.instagram .decoration {
+	margin-bottom: 80px;
+}
+
+.instagram .section {
+	margin: -3px auto;
+	float: left;
+	overflow: hidden;
+}
+
+.instagram:after {
+	content: '';
+	overflow: hidden;
+	display: table;
+	clear: both;
+}
+
+.instagram .section .instaphoto {
+	width: 20%;
+	height: 20%;
+	margin: 0;
+	list-style-type: none;
+	float: left;
+}
+
+.instagram img {
+	width: 100%
+}
+
+/* Footer */
+
+footer {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	background-color: #141414;
+}
+
+footer .mikes {
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 104px;
+	height: 63px;
+	color: white;
+	font-family: Herr Von Muellerhoff;
+	font-size: 5em;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+footer .photographyfooter {
+	margin: 0 auto;
+	width: 81px;
+	height: 18px;
+	display: block;
+	position: relative;
+	top: -42px;
+	left: 21px;
+	color: white;
+	font-family: Dancing Script;
+	font-size: 1.5em;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+footer .text2 {
+	margin: 0 auto;
+	margin-top: 23px;
+	width: 749px;
+	text-align: center;
+}
+
+footer .longline {
+	width: 770px;
+	height: 1px;
+	background-color: #262626;
+	margin: 0 auto;
+	margin-top: 72px;
+}
+
+footer .copywrite {
+	margin: 0 auto;
+	margin-top: 33px;
+	margin-bottom: 38px;
+	width: 128px;
+	height: 10px;
+	color: #4c4c4c;
+	font-family: Raleway;
+	font-size: 0.9em;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+footer .social {
+	margin-top: 26px;
+}
+
